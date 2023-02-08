@@ -112,10 +112,12 @@ class Column implements QueryPartInterface
      */
     public function setAlias($alias)
     {
-        if (0 == \strlen($alias)) {
-            $this->alias = null;
+        if (!empty($alias)) {
+            if (0 == \strlen($alias)) {
+                $this->alias = null;
 
-            return $this;
+                return $this;
+            }
         }
 
         if ($this->isAll()) {
