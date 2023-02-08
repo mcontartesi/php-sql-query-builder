@@ -69,7 +69,7 @@ class Column implements QueryPartInterface
      */
     public function setName($name)
     {
-        $this->name = (string) $name;
+        $this->name = (string)$name;
 
         return $this;
     }
@@ -112,19 +112,16 @@ class Column implements QueryPartInterface
      */
     public function setAlias($alias)
     {
-        if (!empty($alias)) {
-            if (0 == \strlen($alias)) {
-                $this->alias = null;
-
-                return $this;
-            }
+        if (!$alias) {
+            $this->alias = null;
+            return $this;
         }
 
         if ($this->isAll()) {
             throw new QueryException("Can't use alias because column name is ALL (*)");
         }
 
-        $this->alias = (string) $alias;
+        $this->alias = (string)$alias;
 
         return $this;
     }

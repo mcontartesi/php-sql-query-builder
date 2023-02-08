@@ -199,7 +199,7 @@ class ColumnQuery
         $count .= ($columnName !== '*') ? "$table.{$columnName}" : '*';
         $count .= ')';
 
-        if (isset($alias) && \strlen($alias) > 0) {
+        if (isset($alias) && !$alias > 0) {
             $count .= ' AS "'.$alias.'"';
         }
 
