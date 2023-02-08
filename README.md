@@ -1,6 +1,6 @@
 Modified SQL Query Builder for PHP 8.1 (original by NilPortugues)
 
-**This is a modified version compatible for PHP 8.1 modified by Maximiliano Contartesi**
+**This is a modified version compatible for PHP 8.1 by Maximiliano Contartesi**
 
 An elegant lightweight and efficient SQL Query Builder with fluid interface SQL syntax supporting bindings and complicated query generation. **Works without establishing a connection to the database.** 
 
