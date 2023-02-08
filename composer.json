@@ -32,7 +32,7 @@
     },
     "require":
     {
-        "php": ">=8.1",
+        "php": ">=8.0",
         "nilportugues/sql-query-formatter": "~1.2"
     },
     "require-dev": {
